@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="en-gb"
+	lang="en-gb">
+<head>
+
+<title>THREAD</title>
+<link rel="stylesheet" href="fichiers/style.css" type="text/css" />
+</head>
+<body class="ltr">
+	<div id="wrapcentre">
+		<div id="pagecontent">
+			<table class="tablebg" style="margin-top: 5px;" cellspacing="1"
+				cellpadding="0" width="100%">
+				<tbody>
+					<tr>
+						<td class="row1"><%@ include file="/WEB-INF/jsp/enTete.jspf"%>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+
+			<br clear="all" /> <br clear="all" />
+	<form action="#" method="post">
+			<table style="width: 100%;" cellspacing="1" cellpadding="4"
+				align="center">
+				<tbody>
+					<tr>
+						<td valign="top"><b class="gensmall">Titre du Fil :</b></td>
+						<td><input class="post" name="title" size="25" tabindex="1"
+							type="text" /></td>
+					</tr>
+
+					<tr>
+						<td valign="top"><b class="gensmall">Contenu</b></td>
+						<td><input class="post" name="content" size="25" tabindex="1"
+							type="text" /></td>
+					</tr>
+					<tr>
+						<td class="cat" colspan="2" align="center"><input
+							name="newTopic" class="btnmain" value="Poster" tabindex="5"
+							type="submit" /></td>
+					</tr>
+				</tbody>
+			</table>
+	</form>
+			<table class="tablebg" style="margin-top: 5px;" cellspacing="1"
+				cellpadding="0" width="100%">
+				<tbody>
+					<tr>
+						<td class="row1"><a href="/forum/home" class="breadcrumbs">Index
+								du forum</a></td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+</body>
+</html>

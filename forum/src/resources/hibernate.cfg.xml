@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="dialect">org.hibernate.dialect.HSQLDialect</property>
+		<property name="connection.driver_class">org.hsqldb.jdbcDriver</property>
+		<property name="connection.url">jdbc:hsqldb:C:\Users\Formation\Dropbox\JAVA-JEE Server-Client\TP Forum discussion\forum\forum\data/baseservlet</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.connection.username">sa</property>
+		<property name="hibernate.connection.password"></property>
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+
+		<mapping class="fr.acceis.forum.DAO.Utilisateur" />
+		<mapping class="fr.acceis.forum.DAO.Topic"/>
+		<mapping class="fr.acceis.forum.DAO.Post"/>
+
+	</session-factory>
+</hibernate-configuration>

@@ -1,0 +1,15 @@
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<c:forEach items ="${topics}" var ="topic">
+	<tr>
+	<td class="row1" width="250"> <a class="topictitle" href="/forum/visualiserTopic?id=${topic.id}">  ${topic.titre}  </a></td>
+	<td class="row2" align="center" width="50"><p class="topicauthor"><a class="username-coloured" href="#"> ${topic.auteur.login} </a></p></td>
+	<td class="row1" align="center" width="50"><p class="topicdetails">0</p></td>
+	<td class="row2" align="center" width="50"><p class="topicdetails">666</p></td>
+	</tr>
+</c:forEach>
+
+	
+	
+	
+<%-- 	?id=${topic.id} --%>
